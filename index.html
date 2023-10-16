@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META TAG -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spa</title>
+    <meta name="title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta name="description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="og:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="twitter:description"
+        content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="shortcut icon" href="assets/image/png/f_logo.png" type="image/x-icon">
+    <!-- bootstrap.min -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/image/svg/favicon.svg" type="image/x-icon">
+    <!-- slick-theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick.min -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden">
+    <div id="preloader"
+        class="min-vh-100 d-flex align-items-center justify-content-center bg_color_sky position-fixed w-100 top-0 start-0 z-3">
+        <div><img src="assets/image/svg/spa_logo.svg" alt="logo_white"></div>
+    </div>
+    <div class="overflow-x-hidden">
+        <header>
+            <div class="bg_img_hero position-relative">
+                <img class="position_left_zigzag" src="assets/image/svg/zigzag_left.svg" alt="zigzag_left">
+                <img class="position_right_zigzag d-none d-md-block" src="assets/image/svg/zigzag_right.svg"
+                    alt="zigzag_left">
+                <!-- Navbar_Start -->
+                <nav class="position-relative">
+                    <div class="custum_container position-relative">
+                        <div class="d-flex justify-content-between pt-lg-4 pt-0">
+                            <div class="cursor_pointer"><img class="z-n1 logo_hero pt-sm-3 pt-0 pt-lg-0"
+                                    src="./assets/image/svg/spa_logo.svg" alt="spa_logo">
+                            </div>
+                            <ul class="d-flex gap-4 nav_bar mb-0 align-items-center" id="nav_click">
+                                <li><a onclick="navbartoggle()" class="ff_poppins fw-normal fs_md color_white link"
+                                        href="#Services">Services</a>
+                                </li>
+                                <li><a onclick="navbartoggle()" class="ff_poppins fw-normal fs_md color_white link"
+                                        href="#Benefits">Benefits</a></li>
+                                <li><a onclick="navbartoggle()" class="ff_poppins fw-normal fs_md color_white link"
+                                        href="#whychoose">Why Choose US</a>
+                                </li>
+                                <li><a onclick="navbartoggle()" class="ff_poppins fw-normal fs_md color_white link"
+                                        href="#FAQs">FAQs</a>
+                                </li>
+
+                                <li><button class="Button_Blue d-block d-lg-none">Contact us</button>
+                                </li>
+
+                            </ul>
+                            <div>
+                                <button class="Button_Blue d-lg-block d-none">Contact us</button>
+                            </div>
+
+                        </div>
+                        <div id="menubar" class="linebox d-lg-none" onclick="navbartoggle()">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Navbar_End -->
+                <!-- HERO START HERE -->
+                <div class="pt-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="3000" id="Services">
+                    <h1
+                        class="text-center color_white mt-sm-5 pt-3 mt-3 pt-sm-5 fs_xxl fw-semibold ff_poppins mb-3 pb-1">
+                        Simplifying <span class="fw-normal fst-italic d_md_Block"> Laptop Refresh</span><span
+                            class="d-md-block">Deployments for <span class="d_md_Block">Organizations</span>
+                        </span></h1>
+                    <div class="d-flex justify-content-center">
+                        <p class="text-center color_white ff_poppins fs_lg fw-normal mb-0 max_width_md mx-3 mx-sm-0">
+                            Revolutionizing the
+                            Way You Manage
+                            Laptop Refresh Projects</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center px-2 mt-4 mt-lg-5 pt-3 pt-lg-4" data-aos="fade-up"
+                        data-aos-duration="2000" data-aos-delay="3000">
+                        <div class="col-md-10">
+                            <div class="dashboard-slider">
+                                <div>
+                                    <img class="hero_light" src="assets/image/png/Dashboard-Light.png"
+                                        alt="Dashboard ">
+                                </div>
+                                <div>
+                                    <img class="hero_light" src="assets/image/png/Dashboard-Light1.png"
+                                        alt="Dashboard ">
+                                </div>
+                                <div>
+                                    <img class="hero_light" src="assets/image/png/Dashboard-Light2.png"
+                                        alt="Dashboard ">
+                                </div>
+                                <div>
+                                    <img class="hero_light" src="assets/image/png/Dashboard-Light3.png"
+                                        alt="Dashboard ">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HERO END HERE -->
+            </div>
+        </header>
+
+        <!-- FEATURES START HERE -->
+
+        <section class="position-relative z-index high_margin pb-sm-5">
+            <img class="position-abs_circle" src="assets/image/svg/circle.svg" alt="#">
+            <div class="position-relative z-1 " id="Benefits">
+                <img class=" group_Features z-n1" src="assets/image/png/group_56.png" alt="group_56">
+                <h2 class="text-center pb-sm-5 pb-4 fs_xl m-0 features_top_p fw-semibold" data-aos="zoom-in-up"
+                    data-aos-duration="2000">Features & <span class="Features">Benefits</span>
+                </h2>
+                <div class="custum_container pt-2 pt-sm-0">
+                    <div class="center_Benefite row">
+
+                        <div class="col-md-4 sadhow p-2 px-3" data-aos="flip-left" data-aos-duration="2000">
+                            <div class="card_man ps-3 pe-3 cursor_pointer">
+                                <h2 class="card_heading mb-4 fs_md ff_poppins">
+                                    Employee Portal
+                                </h2>
+                                <div class="card_contant pt-2">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">User-Friendly Signup:
+                                        </h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Employees easily indicate
+                                            their preference for a new laptop.</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant pt-2">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Seamless Communication:
+                                        </h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Automated notifications
+                                            keep
+                                            employees informed from request to exchange.</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant pt-2">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Flexible Scheduling:</h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Convenient appointment
+                                            scheduling and rescheduling rightfrom the portal.</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 sadhow  p-2 px-3" data-aos="flip-left" data-aos-duration="2000">
+                            <div class="card_man ps-3  pe-3 cursor_pointer">
+                                <h2 class="card_heading mb-4 fs_md ff_poppins">
+                                    Engineer Dashboard
+                                </h2>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Daily Handover Insights:
+                                        </h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">View all laptop handover
+                                            appointments for the day at a glance.</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Efficient Management:
+                                        </h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Update laptop serial
+                                            numbers
+                                            manually, label exchanges, and track noshows.</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Full Office Visibility:
+                                        </h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Monitor all appointments
+                                            for
+                                            the office, regardless of the date.</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 sadhow p-2 px-3" data-aos="flip-left" data-aos-duration="2000">
+                            <div class="card_man ps-3  pe-3 cursor_pointer">
+                                <h2 class="card_heading mb-4 fs_md ff_poppins">
+                                    Stakeholder Dashboard
+                                </h2>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Deployment Overview:</h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Stay updated with holistic
+                                            and
+                                            individual office performance metrics.</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Employee Tracking:</h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Identify completed
+                                            exchanges
+                                            and no-shows, making escalations swift and easy</p>
+                                    </div>
+                                </div>
+                                <div class="card_contant">
+                                    <span class="list_style">
+                                        <span class="middle_dot"></span>
+                                    </span>
+                                    <div class="heading ">
+                                        <h6 class="ff_poppins fs_sm fw-medium color_darknight">Deployment Calendar:</h6>
+                                        <p class="ff_poppins fs_sm fw-normal color_darknight">Get a clear picture of
+                                            current
+                                            and upcoming deployments by office.</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex btn_box justify-content-center pt-4">
+                        <button class="prev prev1 prev_btn"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" viewBox="0 0 25 25" fill="none">
+                                <path d="M15.875 5.75L9.125 12.5L15.875 19.25" stroke="#646060" stroke-width="2.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></button>
+                        <button class="next prev1 next_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                fill="none">
+                                <path d="M9.125 19.25L15.875 12.5L9.125 5.75" stroke="#646060" stroke-width="2.25"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURES END HERE -->
+
+        <!-- ABOUT SPA START HERE -->
+        <section class="bg_color_about my-0 my-lg-5 py-lg-5 py-0">
+            <div class="custum_container Margin_Top my-0 my-lg-5 py-3 py-lg-5">
+                <div class="pb-4 mb-1 py-lg-0">
+                    <div class="row py-4 align-items-center">
+                        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                            <h2 class="fs_xl fw-normal ff_poppins color_darknight d-none d-lg-block mb-3"><span
+                                    class="fw-semibold">About</span>
+                                SPA</h2>
+                            <h2
+                                class="fs_llg ff_poppins color_darknight fw-semibold d-block d-lg-none mb-4 pb-1 text-center text-lg-start">
+                                About<span class="fst-italic fw-normal ps-1">Us</span>
+                            </h2>
+                            <div class="d-flex justify-content-center">
+                                <p
+                                    class="fs_sm ff_poppins color_darknight fw-normal text-center text-lg-start max_width_dui">
+                                    Dui nulla duis
+                                    tristique eu sed sit in ut.
+                                    Dictum felis commodo eu nulla. Adipiscing sed eu nisi
+                                    justo id pharetra rutrum. Morbi nisi facilisi senectus pulvinar in enim feugiat eros
+                                    tortor.
+                                    Eget
+                                    senectus tellus nunc vulputate volutpat.</p>
+                            </div>
+                            <div class="d-flex justify-content-center mb-4 mb-lg-0">
+                                <p
+                                    class="fs_sm ff_poppins color_darknight fw-normal text-center text-lg-start max_width_md">
+                                    Laoreet
+                                    pellentesque augue ipsum urna
+                                    potenti elementum. Tincidunt ipsum at suspendisse posuere
+                                    scelerisque sit elit. Cras tellus id odio amet pellentesque arcu.</p>
+                            </div>
+                            <div
+                                class="d-flex justify-content-center justify-content-lg-start pb-5 mb-2 pb-lg-0 mb-lg-0">
+                                <button class="Button_Blue_About mt-2">Learn More</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="d-flex justify-content-center">
+                                <img class="width_about_img z-1 ps-3 ps-sm-0" src="assets/image/png/New_Macbook.png"
+                                    alt="New_Macbook">
+                            </div>
+                            <img class="position_abs_About " src="assets/image/svg/About_round.svg" alt="About_round">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SPA END HERE -->
+
+        <!-- CHOOSE SPA START HERE -->
+        <section id="whychoose">
+            <h2 class="text-center spa_p_top  m-0 fs_xl fw-semibold color_darknight" data-aos="zoom-in-up"
+                data-aos-duration="2000">Why Choose <span class="Features_four">SPA?
+                </span></h2>
+            <div class="pt-lg-5 mt-lg-4 ">
+                <div class="container pt-lg-3">
+                    <div class="row justify-content-center px-2 px-sm-0">
+                        <div class="col-lg-4" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="d-flex col_rev">
+
+                                <div class="spa_con_box ">
+                                    <h2 class="text-lg-end ff_poppins fs_sm color_darknight fw-medium">Comprehensive
+                                        Solution</h2>
+                                    <p
+                                        class="text-lg-end max_width_Choose fs_sm ff_poppins mb-0 color_darknight fw-normal">
+                                        SPA handles every aspect of
+                                        your laptop
+                                        refresh project, eliminating the need for multiple tools and manual
+                                        interventions.
+                                    </p>
+                                </div>
+                                <div class="spa_list cursor_pointer">
+                                    <img class="Choose_scale" src="assets/image/svg/Solution.svg" alt="Solution">
+                                </div>
+
+                            </div>
+                            <div class=" d-none d-lg-block">
+                                <div class="d-flex col_rev pt-lg-5 ">
+                                    <div class="spa_con_box ">
+                                        <h2 class="text-lg-end ff_poppins fs_sm color_darknight fw-medium">Improved
+                                            Accountability:</h2>
+                                        <p
+                                            class="text-lg-end max_width_Choose fs_sm ff_poppins mb-0 color_darknight fw-normal">
+                                            With SPA, stakeholders and
+                                            office managers have access to real-time data, ensuring that every employee
+                                            exchange is accounted for.
+                                        </p>
+                                    </div>
+                                    <div class="spa_list cursor_pointer">
+                                        <img class="Choose_scale" src="assets/image/svg/checklist.svg" alt="checklist">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3  spa_image pt-3" data-aos="zoom-in-up" data-aos-duration="2000">
+                            <img class="w-100 cursor_pointer" src="assets/image/png/spa.png" alt="spa image">
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="d-flex">
+                                <div class="spa_list cursor_pointer">
+                                    <img class="Choose_scale" src="assets/image/svg/clock.svg" alt="clock">
+                                </div>
+                                <div class="spa_con_box2 ">
+                                    <h2 class="text-start ff_poppins fs_sm color_darknight fw-medium">Time & Cost
+                                        Efficiency
+                                    </h2>
+                                    <p
+                                        class="text-start max_width_Choose fs_sm ff_poppins mb-0 color_darknight fw-normal">
+                                        Automated processes mean less
+                                        manual work, leading to faster deployments and cost savings.</p>
+                                </div>
+
+
+                            </div>
+                            <div class="d-flex pt-lg-5 mt-lg-4">
+                                <div class="spa_list cursor_pointer">
+                                    <img class="Choose_scale" src="assets/image/svg/communication.svg"
+                                        alt="communication">
+                                </div>
+                                <div class="spa_con_box2 ">
+                                    <h2 class="text-start ff_poppins fs_sm color_darknight fw-medium">Enhanced
+                                        Communication
+                                    </h2>
+                                    <p
+                                        class="text-start max_width_Choose fs_sm ff_poppins mb-0 color_darknight fw-normal">
+                                        Whether it's rescheduling,
+                                        reminders, or
+                                        updates, SPA ensures everyone is on the same page.</p>
+                                </div>
+
+                            </div>
+
+                            <div class=" d-lg-none d-block">
+                                <div class="d-flex col_rev pt-lg-5 ">
+                                    <div class="spa_con_box ">
+                                        <h2 class="text-lg-end ff_poppins fs_sm color_darknight fw-medium">Improved
+                                            Accountability:</h2>
+                                        <p
+                                            class="text-lg-end max_width_Choose fs_sm ff_poppins mb-0 color_darknight fw-normal">
+                                            With SPA, stakeholders and
+                                            office managers have access to real-time data, ensuring that every employee
+                                            exchange is accounted for.
+                                        </p>
+                                    </div>
+                                    <div class="spa_list">
+                                        <img class="Choose_scale" src="assets/image/svg/checklist.svg" alt="checklist">
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CHOOSE SPA END HERE -->
+
+
+        <!-- WATCH PROMO START HERE -->
+
+        <section class="position-relative high_pading">
+            <div class="container">
+                <h2 class="text-center pb-5 m-0 fs_xl fw-semibold color_darknight ff_poppins" data-aos="zoom-in-up"
+                    data-aos-duration="2000">Watch Promo <span class="Features_four">Video</span></h2>
+                <div class="video_box" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="w-100" src="assets/image/png/video_img.png" alt="laptop">
+                    <div class="play_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57" fill="none">
+                            <path
+                                d="M51.6562 28.4968L51.6562 28.5054C51.657 28.8028 51.5807 29.0954 51.4349 29.3546L52.9874 30.2279L51.4349 29.3546C51.2891 29.6138 51.0787 29.8308 50.8241 29.9846L50.8158 29.9897L18.7355 49.6146L18.7348 49.615C18.4644 49.7806 18.1546 49.871 17.8376 49.8769C17.5205 49.8828 17.2077 49.8039 16.9313 49.6484L16.9273 49.6462C16.6559 49.4945 16.4299 49.2732 16.2724 49.0052C16.1151 48.7375 16.0319 48.4328 16.0312 48.1223V8.87993C16.0319 8.56945 16.1151 8.26472 16.2724 7.997C16.4299 7.72899 16.6559 7.50775 16.9273 7.35604L16.9273 7.35605L16.9313 7.35378C17.2077 7.19831 17.5205 7.11943 17.8376 7.12531C18.1546 7.13118 18.4644 7.22158 18.7348 7.38718L18.7355 7.38758L50.8158 27.0125L50.8241 27.0176C51.0787 27.1714 51.2891 27.3884 51.4349 27.6476L52.9874 26.7743L51.4349 27.6477C51.5807 27.9069 51.657 28.1994 51.6562 28.4968Z"
+                                stroke="white" stroke-width="3.5625" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="Vector">
+                <img class="w-100" src="assets/image/png/Vector.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 650px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="560" height="315" class="w-100"
+                            src="https://www.youtube.com/embed/FxgM9k1rg0Q?si=hnEKHsX2caC9aHOB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- WATCH PROMO END HERE -->
+
+
+        <!-- PARTNER START HERE -->
+        <section class="bg_color_about my-sm-5 py-0 py-lg-5 my-lg-0">
+            <div class="custum_container py-5">
+                <div class="row py-2 py-lg-4 column_lg_reverse align-items-center">
+
+                    <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-duration="2000">
+                        <div class="d-flex justify-content-center">
+                            <img class="w-100 z-1 width_about_img pt-5 pt-lg-0 pb-4 pb-lg-0 px-3 px-sm-0"
+                                src="assets/image/png/New_Macbook_PRO.png" alt="New_Macbook_PRO">
+                        </div>
+                        <img class="position_abs_Partner" src="assets/image/svg/Partner_round.svg" alt="Partner_round">
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+                        <h2 class="fs_xl fw-normal ff_poppins color_darknight text-center text-lg-start mb-2 mb-lg-0">
+                            <span class="fw-semibold">Your Partner in
+                                <span class="d-block">Streamlined Laptop</span></span><span
+                                class="Features_four">Refresh
+                                Deployments</span></h2>
+                        <div class="d-flex justify-content-center">
+                            <p
+                                class="fs_sm ff_poppins color_darknight fw-normal opacity_06 max_width_dui text-center text-lg-start pt-lg-3 ">
+                                Equip your organization with the
+                                best. Experience hassle-free management and stakeholder satisfaction with SPA.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- PARTNER END HERE -->
+
+    <!-- FOOTER START HERE -->
+
+
+    <section class="footer_box position-relative z-index bg_color_white" id="FAQs">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center justify-content-sm-start">
+                        <img class="Width_logo_footer cursor_pointer" src="assets/image/png/f_logo.png" alt="logo">
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start">
+                        <p
+                            class="pt-3 fs_sm m-0 max_width_duie ff_poppins fw-normal color_darknight text-center text-sm-start opacity_06">
+                            Equip your
+                            organization with the best. Experience hassle-free
+                            management and stakeholder satisfaction with SPA.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 ps-lg-4 order-1 order-lg-2">
+                    <div class="row px-2 px-sm-0 justify-content-end">
+                        <div class="col-6">
+                            <h6 class="fs_md margin_in ff_poppins fw-semibold color_darknight">Links</h6>
+                            <ul class="p-0 m-0">
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Assignment</a></li>
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Product Package</a></li>
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Journey</a></li>
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Contact Us</a></li>
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Programs</a></li>
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer" href="#">Terms
+                                        of Service</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-6 ">
+                            <h6 class="fs_md margin_in ff_poppins fw-semibold color_darknight">Other Links</h6>
+                            <ul class="p-0 m-0">
+                                <li class="pb-2"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Privacy Policy</a></li>
+                                <li class="pb-0 pb-sm-0"><a class="fs_sm links ff_poppins opacity_06 link_footer"
+                                        href="#">Terms of Service</a></li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pt-5 pt-lg-0 order-2 order-lg-1">
+
+                    <form action="#" class="p-3 bg_main ">
+                        <div class="row pt-2">
+                            <div class="col-6">
+                                <label for="f_name" class="color_white fs_smm ff_poppins fw-normal">First
+                                    Name</label>
+                                <input class="w-100" type="text" id="f_name">
+                            </div>
+                            <div class="col-6 pb-2">
+                                <label for="l_name" class="color_white fs_smm ff_poppins fw-normal">Last Name</label>
+                                <input class="w-100" type="text" id="l_name">
+                            </div>
+                            <div class="col-12 pb-1">
+                                <label for="email" class="color_white fs_smm ff_poppins fw-normal">Email</label>
+                                <input class="w-100" type="email" id="email">
+                            </div>
+                            <div class="col-12 pt-2">
+                                <button class="submit_btn">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <p class="text-center rights m-0 fs_sm ff_poppins fw-normal color_darknight opacity_06">
+            © 2023 SPA All rights reserved
+        </p>
+        <div class="group_516">
+            <img class="w-100" src="assets/image/png/group_56.png" alt="">
+        </div>
+        <div class="group_518">
+            <img class="w-100" src="assets/image/png/group_56.png" alt="">
+        </div>
+    </section>
+    <!-- FOOTER END HERE -->
+
+    </div>
+
+    <!-- Back_TO_TOP -->
+    <div id="backbtn" onclick="window.scrollTo(0,0)" class="Top_To_Button z-2 ">
+        <div class="d-flex justify-content-center align-items-center h-100 cursor_pointer ">
+            <svg width="20" height="20" fill="white" viewBox="0 0 16 16">
+                <path fillRule="evenodd"
+                    d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z">
+                </path>
+                <path fillRule="evenodd"
+                    d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('.center_Benefite').slick({
+
+
+            infinite: true,
+            arrows: true,
+            speed: 300,
+            prevArrow: $('.prev_btn'),
+            nextArrow: $('.next_btn'),
+            responsive: [{
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+        $('.dashboard-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            autoplaySpeed: 2000,
+            fade: true,
+            speed: 300,
+        });
+    </script>
+
+    <script>
+        const backbtn = document.getElementById('backbtn')
+
+        window.addEventListener(('scroll'), function () {
+            if (window.scrollY > 500) {
+                backbtn.style.display = "block"
+            } else {
+                backbtn.style.display = "none"
+            }
+        })
+
+
+        const nav = document.getElementById("nav_click")
+        const menubar = document.getElementById("menubar")
+
+        function navbartoggle() {
+            nav.classList.toggle("show")
+            document.body.classList.toggle("overflow_hidden")
+            menubar.classList.toggle("cross")
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+
+        // Preloader 
+        const preloader = document.getElementById("preloader")
+
+        setTimeout(() => {
+            preloader.classList.add("d-none")
+            document.body.classList.remove("overflow-hidden")
+        }, 3000)
+    </script>
+
+</body>
+
+</html>
